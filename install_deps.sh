@@ -2,8 +2,10 @@
 
 set -e
 
-sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt-get update
 sudo apt-get install -y build-essential cmake python-pip
+
+sudo apt-get install libccd-dev libqglviewer-dev-qt5
 
 sudo pip install -U setuptools
 sudo pip install rosdep wstool rosinstall catkin_tools
