@@ -478,6 +478,10 @@
     local-name: franka_ros
     uri: https://github.com/frankaemika/franka_ros.git
     version: kinetic-devel
+- tar:
+    local-name: libfranka
+    uri: https://github.com/frankaemika/libfranka-release/archive/upstream/0.7.1.tar.gz
+    version: libfranka-release-upstream-0.7.1
 - git:
     local-name: moveit_msgs
     uri: https://github.com/ros-planning/moveit_msgs.git
