@@ -10,7 +10,7 @@ env:
     - CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Debug"
 
 install:
-  - install_deps.sh
+  - ./install_deps.sh
 
 script:
-  - build_and_test.sh
+  - ./build_and_test.sh
