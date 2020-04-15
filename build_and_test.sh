@@ -2,16 +2,19 @@
 
 source .moveit_ci/util.sh
 
-set -e
 
 cd workspace
 
 
 travis_fold start catkin_build "Building workspace"
 
-catkin config --install --init --no-extend --jobserver --cmake-args $CMAKE_ARGS
+Xvfb -screen 0 640x480x24 :99 &
+export DISPLAY=:99.0
+travis_run_true glxinfo -B
 
-catkin build
+travis_run_true catkin config --install --init --no-extend --jobserver --cmake-args $CMAKE_ARGS
+
+travis_run_true catkin build
 
 travis_fold end catkin_build
 
@@ -19,15 +22,15 @@ source install/setup.sh
 
 travis_fold start catkin_build_tests "Building Tests"
 
-catkin build --make-args tests
+travis_run_true catkin build --make-args tests
 
 travis_fold end catkin_build_tests
 
 
 travis_fold start catkin_run_tests "Run Tests"
 
-catkin build --catkin-make-args run_tests
+travis_run_true catkin build --catkin-make-args run_tests
 
 travis_fold end catkin_run_tests
 
-catkin_test_results
+travis_run_true catkin_test_results
