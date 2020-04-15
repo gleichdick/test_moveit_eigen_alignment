@@ -534,3 +534,7 @@
     local-name: joystick-drivers
     uri: https://github.com/ros-drivers/joystick_drivers.git
     version: master
+- git:
+    local-name: rqt
+    uri: https://github.com/ros-visualization/rqt.git
+    version: kinetic-devel
