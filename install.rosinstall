@@ -530,3 +530,7 @@
     local-name: urdfdom_headers
     uri: https://github.com/ros-gbp/urdfdom_headers-release/archive/release/indigo/urdfdom_headers/0.3.0-2.tar.gz
     version: urdfdom_headers-release-release-indigo-urdfdom_headers-0.3.0-2
+- git:
+    local-name: joystick-drivers
+    uri: https://github.com/ros-drivers/joystick_drivers.git
+    version: master
