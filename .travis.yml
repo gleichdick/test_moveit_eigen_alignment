@@ -1,0 +1,16 @@
+os: linux
+dist: bionic
+language: cpp
+cache: ccache
+compiler: gcc
+
+env:
+  global:
+    - CXXFLAGS="-O3 -Wall -Wextra -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls -DEIGEN_MAX_STATIC_ALIGN_BYTES=64 -DEIGEN_MAX_ALIGN_BYTES=64"
+    - CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Debug"
+
+install:
+  - install_deps.sh
+
+script:
+  - build_and_test.sh
