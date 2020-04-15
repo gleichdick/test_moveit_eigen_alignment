@@ -513,11 +513,9 @@
 - tar:
     local-name: octomap
     uri: https://github.com/OctoMap/octomap/archive/v1.9.5.tar.gz
-    version: v1.9.5
 - tar:
     local-name: ompl
     uri: https://github.com/ompl/ompl/archive/1.4.2.tar.gz
-    version: 1.4.2
 - git:
     local-name: orocos_kdl
     uri: https://github.com/orocos/orocos_kinematics_dynamics.git
@@ -529,8 +527,6 @@
 - tar:
     local-name: urdfdom
     uri: https://github.com/ros-gbp/urdfdom-release/archive/release/indigo/urdfdom/0.3.0-2.tar.gz
-    version: 0.3.0
 - tar:
     local-name: urdfdom_headers
     uri: https://github.com/ros-gbp/urdfdom_headers-release/archive/release/indigo/urdfdom_headers/0.3.0-2.tar.gz
-    version: 0.3.0
