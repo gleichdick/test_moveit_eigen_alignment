@@ -387,10 +387,6 @@
     uri: https://github.com/ros-gbp/rospack-release/archive/release/melodic/rospack/2.5.5-1.tar.gz
     version: rospack-release-release-melodic-rospack-2.5.5-1
 - tar:
-    local-name: rqt_msg
-    uri: https://github.com/ros-gbp/rqt_msg-release/archive/release/melodic/rqt_msg/0.4.8-0.tar.gz
-    version: rqt_msg-release-release-melodic-rqt_msg-0.4.8-0
-- tar:
     local-name: urdf/urdf
     uri: https://github.com/ros-gbp/urdf-release/archive/release/melodic/urdf/1.13.2-1.tar.gz
     version: urdf-release-release-melodic-urdf-1.13.2-1
