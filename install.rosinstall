@@ -514,10 +514,10 @@
     local-name: octomap
     uri: https://github.com/OctoMap/octomap/archive/v1.9.5.tar.gz
     version: octomap-1.9.5
-- tar:
+- git:
     local-name: ompl
-    uri: https://github.com/ompl/ompl/archive/1.4.2.tar.gz
-    version: ompl-1.4.2
+    uri: https://github.com/ompl/ompl.git
+    version: master
 - git:
     local-name: orocos_kdl
     uri: https://github.com/orocos/orocos_kinematics_dynamics.git
