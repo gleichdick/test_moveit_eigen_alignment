@@ -522,3 +522,11 @@
     local-name: ompl
     uri: https://github.com/ompl/ompl/archive/1.4.2.tar.gz
     version: 1.4.2
+- git:
+    local-name: orocos_kdl
+    uri: https://github.com/orocos/orocos_kinematics_dynamics.git
+    version: master
+- git:
+    local-name: kdl_parser
+    uri: https://github.com/ros/kdl_parser.git
+    version: melodic-devel
