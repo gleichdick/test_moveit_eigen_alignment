@@ -10,7 +10,8 @@ travis_fold start catkin_build "Building workspace"
 
 Xvfb -screen 0 640x480x24 :99 &
 export DISPLAY=:99.0
-travis_run glxinfo -B
+sleep 2
+travis_run_true glxinfo -B
 
 travis_run catkin config --install --init --no-extend --jobserver --cmake-args $CMAKE_ARGS
 
