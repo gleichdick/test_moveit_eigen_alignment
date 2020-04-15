@@ -8,6 +8,7 @@ env:
   global:
     - CXXFLAGS="-O3 -Wall -Wextra -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls -DEIGEN_MAX_STATIC_ALIGN_BYTES=64 -DEIGEN_MAX_ALIGN_BYTES=64"
     - CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Debug"
+    - ROSDEP_IGNORE="python-catkin-pkg python-catkin-pkg-modules python3-catkin-pkg python3-catkin-pkg-modules"
 
 before_install:
   - git clone -q --depth=1 https://github.com/ros-planning/moveit_ci.git .moveit_ci
